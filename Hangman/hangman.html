@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang = 'en'>
+<head>
+  <meta charset = 'utf-8'>
+  <title> Hangman </title>
+  <link rel = 'stylesheet' href = 'hangman.css'>
+  </head>
+<body>
+  <p>
+
+  <div id = 'inputDiv'>
+    <h2 id = 'instructions'> Player One Enter Word </h2>
+    <input type = 'text' id = 'entryField'>
+    <br>
+    <br>
+    <button type = 'submit' id = 'ok'> OK! </button>
+  </div>
+
+  <h2 id = 'chances'> Guesses remaining: 5  </h2>
+    <br>
+    <br>
+    <div 'sub'>
+  <input type = 'text' id = 'guess' placeholder = 'Letter Guess' maxlength = '1'>
+  <button type = 'submit' id ='submit'> Submit </button>
+
+
+  <h1 id = 'welcome' class = 'fade-out'> </h1>
+
+  <div id = 'dash'>
+  <h1 id = 'word' class = 'active'> </h1>
+</div>
+
+<div id = 'whole'>
+  <button type= "button" id ='wholeButton'> Guess Whole Word? </button>
+  <input type = 'text' id ='wholeField' placeholder = ' Word'>
+  <input type= "radio" id ='rad' value = 'big brain time'>
+</div>
+
+  <button type = 'button' id ='new'> New Game </button>
+  <button type = 'button' id = 'retry'> Retry </button>
+
+  <h2 id = 'wrong' class = 'fade-out-wrong'> Incorrect guess! </h2>
+  <p id = 'og'> </p>
+
+
+  <svg viewBox="0 0 500 500">
+      <path id="curve" d="M73.2,148.6c4-6.1,65.5-96.8,178.6-95.6c111.3,1.2,170.8,90.3,175.1,97" />
+      <text id = 'over' width="500">
+        <textPath xlink:href="#curve">
+          ~–––––Game Over–––––~
+        </textPath>
+      </text>
+    </svg>
+
+  <em> <h1 id = 'win'> Congrats - You won! </h1> </em>
+
+
+
+  <script src = 'hangman.js'> </script>
+</body>
+</html>

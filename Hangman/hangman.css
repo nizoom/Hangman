@@ -1,0 +1,254 @@
+body{
+
+  background-image: url('game.png');
+  background-size: 40% 100%;
+  background-attachment: fixed;
+
+}
+
+#submit{
+  border-width: thick;
+  border-radius: 25%;
+  border-color: #9966ff;
+  background-color: #99ccff;
+  font-size: 20px;
+}
+
+#over{
+  z-index: 1;
+  position: absolute;
+  text-align: center;
+}
+
+#inputDiv{
+  text-align: center;
+  width: 700px;
+  height: 200px;
+  display: none;
+  padding: 10px;
+  border-radius: 25px;
+  background-color: #669999;
+  align-content: center;
+  left: 320px;
+  top: 50%;
+  position: fixed;
+  border: solid;
+  opacity: 70%;
+
+
+}
+#entryField{
+  margin: 5px;
+
+}
+
+#ok{
+
+  border-color: #9966ff;
+  background-color: #99ccff;
+  font-weight: bold;
+}
+
+#new{
+  position: fixed;
+  left: 40%;
+  bottom: 700px;
+  border-width: thick;
+  border-radius: 5%;
+  color: black;
+  border-color: #ff3399;
+  background-color: #e7c8e9;
+  font-size: 15px;
+}
+
+#retry{
+  position: fixed;
+  left: 55%;
+  bottom: 700px;
+  border-width: thick;
+  border-radius: 5%;
+  color: black;
+  border-color: #ffff00;
+  background-color: #00cc99;
+  font-size: 15px;
+}
+
+#guess {
+  border-width: thick;
+  border-radius: 5%;
+  color: black;
+  border-color: #ff3399;
+  background-color: #e7c8e9;
+  font-size: 20px;
+
+}
+#whole{
+  position: relative;
+  left: 1250px;
+  top: 10px;
+
+}
+#wholeButton{
+  position: fixed;
+  left: 1250px;
+  top: 10px;
+  border: solid;
+  border-width: thick;
+  border-radius: 25%;
+  border-color: #9966ff;
+  background-color: #99ccff;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+#wholeField{
+  display: none;
+  position: fixed;
+  top: 50px;
+  right: 150px;
+  border: solid;
+  font-weight: bold;
+  font-size: 25px;
+  border-color: #ff3399;
+  background-color: #e7c8e9;
+  border-radius: 15px;
+
+}
+
+#rad{
+  display: none;
+  position: fixed;
+  float: right;
+  top: 50px;
+  right: 70px;
+  height: 40px;
+  width: 40px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+#win{
+  display: none;
+  position: relative;
+  color: #cc00cc;
+  font-size: 60px;
+  top: -1500px;
+  z-index: 1;
+  text-align: center;
+}
+
+#chances{
+  display: inline;
+  border:solid;
+  border-width: thick;
+  border-radius: 15%;
+  border-color: #9966ff;
+  background-color: #99ccff;
+  font-size: 20px;
+}
+
+path{
+  fill: transparent;
+}
+
+text{
+  display: none;
+  font-family: "Gill Sans", sans-serif;
+  font-size: 35px;
+  fill: #FF9800;
+  font-weight: bold;
+
+}
+
+
+#word{
+  font-size: 300%;
+  position: relative;
+  top: 200px;
+  text-align: center;
+  font-weight: bold;
+}
+
+#og{
+  visibility: hidden;
+}
+
+
+#wrong{
+  visibility: hidden;
+  position: relative;
+  top: 300px;
+  text-align: center;
+  color: #ff5050;
+  text-shadow: 2px 2px #000066;
+  font-weight: bold;
+  opacity: 200%;
+}
+
+.fade-out-wrong{
+  animation: fadeOut ease 8s;
+  -webkit-animation: fadeOut ease 8s;
+  -moz-animation: fadeOut ease 8s;
+  -o-animation: fadeOut ease 8s;
+  -ms-animation: fadeOut ease 8s;
+}
+
+
+#welcome{
+  position: relative;
+  text-align: center;
+  top: 100px;
+  color: #ff99cc;
+  text-shadow: 2px 2px #cc0099;
+}
+
+.fade-out {
+  animation: fadeOut ease 15s;
+  -webkit-animation: fadeOut ease 15s;
+  -moz-animation: fadeOut ease 15s;
+  -o-animation: fadeOut ease 15s;
+  -ms-animation: fadeOut ease 15s;
+}
+@keyframes fadeOut{
+  0% {
+    opacity:10;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@-moz-keyframes fadeOut{
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@-webkit-keyframes fadeOut{
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@-o-keyframes fadeOut{
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@-ms-keyframes fadeOut{
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+}
